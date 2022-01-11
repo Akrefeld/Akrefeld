@@ -329,19 +329,18 @@
         </li>
         
         
-        
-        
+        <li>
+          <a itemprop="sameAs" href="https://github.com/Akrefeld" target="_blank" rel="noopener">
+            <i class="ai ai-github big-icon"></i>
+          </a>
+        </li>
         
         
         
         
           
         
-        <li>
-          <a itemprop="sameAs" href="https://www.researchgate.net/profile/Antonia_Krefeld-Schwalb" target="_blank" rel="noopener">
-            <i class="ai ai-researchgate big-icon"></i>
-          </a>
-        </li>
+        
         
       </ul>
 
@@ -364,7 +363,8 @@ I am a researcher in Marketing, an assistant professor at Rotterdam School of Ma
         <h3>Interests</h3>
         <ul class="ul-interests">
           
-		  With my background in education in cognitive science and marketing, my research is at the interesection of the two fields. I am particularly interested in improving the preference measuremets towards higher predictive validity for real world behavior.
+		  With my education in cognitive science and marketing, my research is at the interesection of the two fields. I am particularly interested in improving the preference measuremets towards higher predictive validity for consumer behavior and managerial decision making.
+		  
 		  
 		  
       </div>
