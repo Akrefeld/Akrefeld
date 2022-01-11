@@ -299,12 +299,12 @@
 
     
 
-<!--<h3 id="about">About</h3>-->
+<h3 id="about">Hi, welcome to my homepage.</h3>
 
-<p> Hi, welcome to my homepage. 
+<p>
+I am a researcher in Marketing and an assistant professor at Rotterdam School of Management. 
 
-I am a researcher in Marketing, an assistant professor at Rotterdam School of Management. I love to talk, so please get in touch if you would like to learn more about my research. 
-</p>
+If you are interested in my research see below or get in touch! I'd love to talk. </p>
     <div class="row">
 
       
@@ -312,9 +312,11 @@ I am a researcher in Marketing, an assistant professor at Rotterdam School of Ma
         <h3>Interests</h3>
         <ul class="ul-interests">
           
-		  With my education in cognitive science and marketing, my research is at the interesection of the two fields. I am particularly interested in improving the preference measuremets towards higher predictive validity for consumer behavior and managerial decision making.
+		  With my training in cognitive science and marketing, my research lies at the intersection of the two fields. I use methods from cognitive science, such as process measurements (mouse and eye tracking) and computer models. 
+		  But I use these methods to gain an understanding of behavior outside the experimental laboratory, not only to describe the behavior in my experimental setup.
 		  
-		  
+		  Currently, I am particularly interested in improving the way researchers and practitioners measure preferences. I am concerned with the models used to estimate individual preferences and the tasks used to elicit preferences.
+
 		  
       </div>
       
@@ -353,118 +355,6 @@ I am a researcher in Marketing, an assistant professor at Rotterdam School of Ma
   </section>
   
 
-  
-  
-  
-  <section id="publications_selected" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Upcoming Publications</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-  <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Krefeld-Schwalb, A. & Scheibehenne, B.</span>
-  (Invited for resubmission to Marketing Letters).
-  <a href="/publication/tighter-nets-for-smaller-fishes-mapping-the-development-of-statistical-practices-in-consumer-research-between-2011-and-2016/" itemprop="name"> Tighter nets for smaller fishes: Mapping the development of statistical practices in consumer research between 2011 and 2016</a>.
-  <a href="https://psyarxiv.com/xjgyk/"itemprop="name"> 10.31234/osf.io/xjgyk</a>
-  
-  <p>
-
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Krefeld-Schwalb, A., Rieskamp, J., Berkowitsch, N. & Scheibehenne, B.</span>
-  (Invited for Resubmission).
-  <a href="/publication/violation-of-independence-in-sequential-decision-making-compensation-and-consistency/" itemprop="name">Violation of Independence in Sequential Decision Making: Compensation and Consistency</a>.
-  
-  
-  <p>
-
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</div>
-
-      
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
   
   <section id="publications" class="home-section">
     <div class="container">
@@ -698,6 +588,59 @@ I am a researcher in Marketing, an assistant professor at Rotterdam School of Ma
   </section>
   
 
+  
+  
+  
+  <section id="publications_selected" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Upcoming Publications</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+  <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <span itemprop="author">
+    Krefeld-Schwalb, A. & Scheibehenne, B.</span>
+  (Invited for resubmission to Marketing Letters).
+  <a href="/publication/tighter-nets-for-smaller-fishes-mapping-the-development-of-statistical-practices-in-consumer-research-between-2011-and-2016/" itemprop="name"> Tighter nets for smaller fishes: Mapping the development of statistical practices in consumer research between 2011 and 2016</a>.
+  <a href="https://psyarxiv.com/xjgyk/"itemprop="name"> 10.31234/osf.io/xjgyk</a>
+  
+  <p>
+
+</p>
+</div>
+
+      
+    
+      
+  <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <span itemprop="author">
+    Krefeld-Schwalb, A., Rieskamp, J., Berkowitsch, N. & Scheibehenne, B.</span>
+  (Invited for Resubmission).
+  <a href="/publication/violation-of-independence-in-sequential-decision-making-compensation-and-consistency/" itemprop="name">Violation of Independence in Sequential Decision Making: Compensation and Consistency</a>.
+  <p>
+
+</p>
+</div>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
   
   
   
