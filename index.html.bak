@@ -683,7 +683,7 @@ A new way to guide consumer’s choice: Retro-cueing alters the availability of 
       
       <li>
         <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">3022 Broadway, New York, NY 10027, United States</span>
+        <span id="person-address" itemprop="address">Thomas Morelaan, 3062 PA Rotterdam, Netherlands</span>
       </li>
       
 
@@ -699,9 +699,9 @@ A new way to guide consumer’s choice: Retro-cueing alters the availability of 
     
     <div class="d-none">
       <input id="map-provider" value="1">
-      <input id="map-lat" value="40.809116">
-      <input id="map-lng" value="-73.961322">
-      <input id="map-dir" value="3022 Broadway, New York, NY 10027, United States">
+      <input id="map-lat" value="51.916171986911">
+      <input id="map-lng" value="-4.525893155928187">
+      <input id="map-dir" value="Thomas Morelaan, 3062 PA Rotterdam, Netherlands">
       <input id="map-zoom" value="15">
       <input id="map-api-key" value="">
     </div>
