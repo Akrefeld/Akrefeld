@@ -665,7 +665,7 @@ A new way to guide consumer’s choice: Retro-cueing alters the availability of 
         <span id="person-email" itemprop="email"><a href="mailto:a.krefeldschwalb@gmail.com">a.krefeldschwalb@gmail.com</a></span>
       </li>
       
-
+<!-- 
       
 
    
@@ -685,7 +685,7 @@ A new way to guide consumer’s choice: Retro-cueing alters the availability of 
         <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
         <span id="person-address" itemprop="address">Thomas Morelaan, 3062 PA Rotterdam, Netherlands</span>
       </li>
-      
+       -->
 
       
       <li>
@@ -697,7 +697,7 @@ A new way to guide consumer’s choice: Retro-cueing alters the availability of 
     </ul>
 
     
-    <div class="d-none">
+ <!--    <div class="d-none">
       <input id="map-provider" value="1">
       <input id="map-lat" value="-4.525893155928187">
       <input id="map-lng" value="51.916171986911">
@@ -705,7 +705,7 @@ A new way to guide consumer’s choice: Retro-cueing alters the availability of 
       <input id="map-zoom" value="15">
       <input id="map-api-key" value="">
     </div>
-    <div id="map"></div>
+    <div id="map"></div> -->
     
 
   </div>
