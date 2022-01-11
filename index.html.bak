@@ -699,8 +699,8 @@ A new way to guide consumer’s choice: Retro-cueing alters the availability of 
     
     <div class="d-none">
       <input id="map-provider" value="1">
-      <input id="map-lat" value="51.916171986911">
-      <input id="map-lng" value="-4.525893155928187">
+      <input id="map-lat" value="-4.525893155928187">
+      <input id="map-lng" value="51.916171986911">
       <input id="map-dir" value="Thomas Morelaan, 3062 PA Rotterdam, Netherlands">
       <input id="map-zoom" value="15">
       <input id="map-api-key" value="">
