@@ -46,6 +46,7 @@ body {
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
   body {
+    font-size: 12px;
     margin-top: 50px; /* Offset body content by navbar height. */
   }
 }
