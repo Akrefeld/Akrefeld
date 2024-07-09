@@ -24,7 +24,7 @@
 
 html {
   font-family: 'Merriweather', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(0,0,0,0.8);
   line-height: 1.65;
 }
@@ -61,6 +61,7 @@ body {
 
 .center-text {
   text-align: center;
+  font-size: 12px;
 }
 
 /* Body text */
@@ -72,6 +73,7 @@ p {
 
 /* Lists */
 ul, ol, dl {
+  font-size: 12px;
   margin-top: 0;
   margin-bottom: 1rem;
 }
