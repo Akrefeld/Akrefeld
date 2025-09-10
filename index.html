@@ -35,7 +35,12 @@
     }
     .profile{width:100%;max-width:280px;text-align:center;z-index:1;}
     .portrait{width:100%;max-width:220px;border-radius:50%;display:block;margin:0 auto 1rem;box-shadow:0 8px 20px rgba(20,20,20,0.08);}
-    .bio{flex:1;min-width:0;z-index:1;}
+    .bio{
+      flex:1;
+      min-width:0;
+      max-width:55%;   /* 🔹 keeps text from overlapping image */
+      z-index:1;
+    }
     .bio h3{margin-top:0;font-size:1.1rem;}
     .bio p{margin:0.6rem 0;font-size:0.98rem;}
 
@@ -55,6 +60,7 @@
     @media (max-width:880px){
       .hero{flex-direction:column;align-items:center;text-align:center;}
       .hero::after{display:none;} /* hide background image on small screens */
+      .bio{max-width:100%;} /* text full width on mobile */
     }
   </style>
 </head>
@@ -72,6 +78,7 @@
   </header>
 
   <main>
+    <!-- About / Hero -->
     <section id="about" class="container hero">
       <div class="profile">
         <img src="/img/Portrait3.jpg" alt="Portrait of Antonia Krefeld-Schwalb" class="portrait" />
