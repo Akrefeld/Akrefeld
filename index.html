@@ -16,160 +16,51 @@
       --accent:#2b6cb0;
       --muted:#6c757d;
       --bg:#ffffff;
-      --surface:#f8f9fa;
       --text:#222;
       --max-width:1100px;
     }
-    html,body{height:100%;}
     body{
       margin:0;
       font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
       color:var(--text);
       background:var(--bg);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
       line-height:1.6;
     }
+    .container{width:94%;max-width:var(--max-width);margin:0 auto;padding:2rem 0;}
 
-    /* Container */
-    .container{
-      width:94%;
-      max-width:var(--max-width);
-      margin:0 auto;
-      padding:2rem 0;
-    }
+    header.site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:20;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.75rem 0;}
+    .brand{font-family:Merriweather,serif;font-weight:700;font-size:1.1rem;color:var(--text);text-decoration:none;}
+    nav a.nav-link{color:var(--muted);text-decoration:none;margin-left:1rem;font-weight:600;font-size:0.95rem;}
+    nav a.nav-link:hover{color:var(--accent);}
 
-    /* Header / navbar */
-    header.site-header{
-      position:sticky;
-      top:0;
-      background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.95));
-      border-bottom:1px solid #eee;
-      z-index:20;
-      backdrop-filter: blur(4px);
-    }
-    .nav-inner{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:1rem;
-      padding:0.75rem 0;
-    }
-    .brand{
-      font-family:Merriweather,serif;
-      font-weight:700;
-      font-size:1.1rem;
-      color:var(--text);
-      text-decoration:none;
-    }
-    nav a.nav-link{
-      color:var(--muted);
-      text-decoration:none;
-      margin-left:1rem;
-      font-weight:600;
-      font-size:0.95rem;
-    }
-    nav a.nav-link:hover{ color:var(--accent); }
+    .hero{display:flex;gap:2rem;align-items:flex-start;margin-top:1rem;}
+    .profile{width:100%;max-width:280px;text-align:center;}
+    .portrait{width:100%;max-width:220px;border-radius:50%;display:block;margin:0 auto 1rem;box-shadow:0 8px 20px rgba(20,20,20,0.08);}
+    .extra-pic{width:100%;max-width:260px;border-radius:12px;display:block;margin:1rem auto;box-shadow:0 6px 16px rgba(20,20,20,0.1);}
+    .portrait-title h2{font-family:Merriweather,serif;margin:0;font-size:1.4rem;}
+    .portrait-title h3{margin:0.25rem 0 0;font-size:0.95rem;color:var(--muted);font-weight:600;}
+    .portrait .org{font-size:0.9rem;margin-top:0.6rem;color:var(--accent);text-decoration:none;display:inline-block;}
 
-    /* Hero */
-    .hero{
-      display:flex;
-      gap:2rem;
-      align-items:flex-start;
-      margin-top:1rem;
-    }
-    .profile {
-      width:100%;
-      max-width:260px;
-      text-align:center;
-    }
-    .portrait{
-      width:100%;
-      max-width:220px;
-      border-radius:50%;
-      display:block;
-      margin:0 auto 1rem;
-      box-shadow:0 8px 20px rgba(20,20,20,0.08);
-    }
-    .portrait-title h2{ font-family:Merriweather,serif; margin:0; font-size:1.4rem; }
-    .portrait-title h3{ margin:0.25rem 0 0; font-size:0.95rem; color:var(--muted); font-weight:600; }
-    .portrait .org{ font-size:0.9rem; margin-top:0.6rem; color:var(--accent); text-decoration:none; display:inline-block; }
+    .bio{flex:1;min-width:0;}
+    .bio h3{margin-top:0;font-size:1.1rem;font-family:Merriweather,serif;}
+    .bio p{margin:0.6rem 0;font-size:0.98rem;}
 
-    .bio{
-      flex:1;
-      min-width:0;
-    }
-    .bio h3{ margin-top:0; font-size:1.1rem; font-family:Merriweather,serif; }
-    .bio p{ margin:0.6rem 0; color:#333; font-size:0.98rem; }
+    .section{margin-top:2.25rem;padding:1.25rem;}
+    .section h1{margin:0;font-family:Merriweather,serif;font-size:1.5rem;border-bottom:2px solid #eee;padding-bottom:0.35rem;}
+    .pub{padding:0.8rem 0;border-bottom:1px dashed #e7e7e7;font-size:0.95rem;}
+    .pub strong{color:#111;display:block;margin-bottom:0.25rem;}
+    .doi{display:inline-block;margin-top:0.45rem;padding:0.25rem 0.5rem;border:1px solid #d0dbe8;color:var(--accent);font-size:0.88rem;text-decoration:none;border-radius:6px;}
 
-    /* Sections */
-    .section{
-      margin-top:2.25rem;
-      padding:1.25rem;
-      background:transparent;
-    }
-    .section .section-head{
-      display:flex;
-      align-items:baseline;
-      gap:1rem;
-      margin-bottom:1rem;
-    }
-    .section h1{
-      margin:0;
-      font-family:Merriweather,serif;
-      font-size:1.5rem;
-      border-bottom:2px solid #eee;
-      padding-bottom:0.35rem;
-    }
-    .pub-list{
-      margin-top:0.75rem;
-    }
-    .pub{
-      padding:0.8rem 0;
-      border-bottom:1px dashed #e7e7e7;
-      font-size:0.95rem;
-    }
-    .pub strong{ color:#111; display:block; margin-bottom:0.25rem; }
-    .doi{
-      display:inline-block;
-      margin-top:0.45rem;
-      padding:0.25rem 0.5rem;
-      border:1px solid #d0dbe8;
-      color:var(--accent);
-      font-size:0.88rem;
-      text-decoration:none;
-      border-radius:6px;
-    }
+    .btn-toggle{display:inline-block;margin-top:1rem;background:transparent;color:var(--accent);border:2px solid var(--accent);padding:0.5rem 0.9rem;border-radius:8px;font-weight:700;cursor:pointer;}
+    .btn-toggle[aria-expanded="true"]{background:var(--accent);color:#fff;}
 
-    /* Toggle button */
-    .btn-toggle{
-      display:inline-block;
-      margin-top:1rem;
-      background:transparent;
-      color:var(--accent);
-      border:2px solid var(--accent);
-      padding:0.5rem 0.9rem;
-      border-radius:8px;
-      font-weight:700;
-      cursor:pointer;
-    }
-    .btn-toggle[aria-expanded="true"]{ background:var(--accent); color:#fff; }
+    footer.site-footer{text-align:center;padding:2rem 0;color:var(--muted);border-top:1px solid #eee;margin-top:2rem;font-size:0.92rem;}
 
-    /* Footer */
-    footer.site-footer{
-      text-align:center;
-      padding:2rem 0;
-      color:var(--muted);
-      border-top:1px solid #eee;
-      margin-top:2rem;
-      font-size:0.92rem;
-    }
-
-    /* Responsive */
     @media (max-width:880px){
-      .hero{ flex-direction:column; align-items:center; text-align:center; }
-      .bio{ text-align:left; }
-      nav a.nav-link{ display:none; } /* keep nav minimal to avoid JS for toggling */
+      .hero{flex-direction:column;align-items:center;text-align:center;}
+      .bio{text-align:left;}
+      nav a.nav-link{display:none;}
     }
   </style>
 </head>
@@ -177,7 +68,7 @@
   <header class="site-header">
     <div class="container nav-inner">
       <a class="brand" href="#">Antonia Krefeld-Schwalb</a>
-      <nav aria-label="Main navigation">
+      <nav>
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#selected-publications">Selected Publications</a>
         <a class="nav-link" href="#all-publications">All Publications</a>
@@ -190,6 +81,9 @@
     <section id="about" class="container hero">
       <div class="profile">
         <img src="/img/Portrait3.jpg" alt="Portrait of Antonia Krefeld-Schwalb" class="portrait" />
+        <!-- NEW additional image -->
+        <img src="img/WhatsApp Image 2025-09-06 at 3.43.23 PM (1).jpeg" alt="Additional photo of Antonia Krefeld-Schwalb" class="extra-pic" />
+        
         <div class="portrait-title">
           <h2>Antonia Krefeld-Schwalb</h2>
           <h3>Assistant Professor</h3>
@@ -206,185 +100,62 @@
       </div>
     </section>
 
-    <!-- Selected publications -->
+    <!-- Selected Publications -->
     <section id="selected-publications" class="container section">
-      <div class="section-head">
-        <h1>Selected Publications</h1>
+      <h1>Selected Publications</h1>
+      <div class="pub">
+        <strong>Krefeld-Schwalb, A., Hua, X., & Johnson, E. J. (2025).</strong>
+        Measuring population heterogeneity requires heterogeneous populations. <em>PNAS</em>.
+        <a class="doi" href="https://doi.org/10.1073/pnas.2425536122" target="_blank" rel="noopener">DOI</a>
       </div>
-
-      <div class="pub-list" aria-live="polite">
-        <article class="pub">
-          <strong>Krefeld-Schwalb, A., Hua, X., & Johnson, E. J. (2025).</strong>
-          Measuring population heterogeneity requires heterogeneous populations. <em>PNAS</em>.
-          <a class="doi" href="https://doi.org/10.1073/pnas.2425536122" target="_blank" rel="noopener">DOI 10.1073/pnas.2425536122</a>
-        </article>
-
-        <article class="pub">
-          <strong>Krefeld-Schwalb, A., Sugerman, E., & Johnson, E. J. (2024).</strong>
-          Exposing omitted moderators: Explaining why effect sizes differ in the social sciences. <em>PNAS</em>.
-          <a class="doi" href="https://doi.org/10.1073/pnas.2306281121" target="_blank" rel="noopener">DOI 10.1073/pnas.2306281121</a>
-        </article>
-
-        <article class="pub">
-          <strong>Krefeld-Schwalb, A. & Scheibehenne, B. (2023).</strong>
-          Tighter nets for smaller fishes: Mapping the development of statistical practices. <em>Marketing Letters</em>.
-          <a class="doi" href="https://doi.org/10.1007/s11002-022-09662-3" target="_blank" rel="noopener">DOI 10.1007/s11002-022-09662-3</a>
-        </article>
-
-        <article class="pub">
-          <strong>Li, Y.*, Krefeld-Schwalb, A.*, Wall, D., Toubia, O., Johnson, E & Bartels, D. (2022).</strong>
-          The more you ask, the less you get: When additional questions hurt external validity. <em>Journal of Marketing Research</em>.
-          <a class="doi" href="https://doi.org/10.1177/00222437211073581" target="_blank" rel="noopener">DOI</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., Pachur, T. & Scheibehenne, B. (2022).</strong>
-          Structural Parameter Interdependencies in Computational Models of Cognition. <em>Psychological Review</em>.
-          <a class="doi" href="https://doi.org/10.1037/rev0000285" target="_blank" rel="noopener">DOI</a>
-        </article>
-
+      <div class="pub">
+        <strong>Krefeld-Schwalb, A., Sugerman, E., & Johnson, E. J. (2024).</strong>
+        Exposing omitted moderators: Explaining why effect sizes differ in the social sciences. <em>PNAS</em>.
+        <a class="doi" href="https://doi.org/10.1073/pnas.2306281121" target="_blank" rel="noopener">DOI</a>
       </div>
-
-      <!-- Toggle -->
-      <div>
-        <button id="togglePubs" class="btn-toggle" aria-expanded="false" aria-controls="allPublications">Show All Publications</button>
+      <div class="pub">
+        <strong>Krefeld-Schwalb, A. & Scheibehenne, B. (2023).</strong>
+        Tighter nets for smaller fishes: Mapping the development of statistical practices. <em>Marketing Letters</em>.
+        <a class="doi" href="https://doi.org/10.1007/s11002-022-09662-3" target="_blank" rel="noopener">DOI</a>
       </div>
+      <button id="togglePubs" class="btn-toggle" aria-expanded="false" aria-controls="all-publications">Show All Publications</button>
     </section>
 
-    <!-- All publications (collapsible) -->
+    <!-- All Publications -->
     <section id="all-publications" class="container section" aria-hidden="true" style="display:none;">
-      <div class="section-head">
-        <h1>All Publications</h1>
-      </div>
-
+      <h1>All Publications</h1>
       <div id="allPublications">
-        <!-- 2025 -->
-        <h3>Working papers</h3>
-        <div class="pub">
-          <strong>Embrey, J. R.* & Krefeld-Schwalb, A.* (2025, July 27).</strong>
-          Cognitive ability affects the coherence between preference estimates.
-          <a class="doi" href="https://doi.org/10.31234/osf.io/ks3qd_v1" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/ks3qd_v1</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., Van den Bergh, B., & Wilson, R. (2025, July 1).</strong>
-          The Flood Will Come: How Flood Risk Labels Drive Homeowners’ Protection Motivation.
-          <a class="doi" href="https://doi.org/10.31234/osf.io/p76ku_v1" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/p76ku_v1</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., & Johnson, E. J. (2025, June 23).</strong>
-          From Crisis to Revolution: Leveraging Heterogeneity in Consumer Research for Generalizability.
-          <a class="doi" href="https://doi.org/10.31234/osf.io/5bmuy_v1" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/5bmuy_v1</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., Bartels, D., & Johnson, E. J. (2024, June 18).</strong>
-          More than Money Over Time: Consumers’ Intertemporal Preferences for Money, Health and Getting Things Done.
-          <a class="doi" href="https://doi.org/10.31234/osf.io/8d2w4" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/8d2w4</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., Martinovici, A., Orquin, J. L., Aribarg, A., Erdem, T., … Yang, C. L. (2024, June 11).</strong>
-          Search in Service of Choice.
-          <a class="doi" href="https://doi.org/10.31234/osf.io/xw5bv" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/xw5bv</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., & Gabel, S. (2023).</strong>
-          Empowering a Sustainable Future: Fostering Sustainable Behavior with Targeted Interventions.
-          <a class="doi" href="https://doi.org/10.31234/osf.io/nc2bh" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/nc2bh</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., Gabel, S., & Wei, S. (2024, Feb 19).</strong>
-          A New Lens on Spillovers: Global Evidence on Overlapping Motives for Sustainable Behaviors.
-          <a class="doi" href="https://doi.org/10.31234/osf.io/syku6" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/syku6</a>
-        </div>
-
-        <!-- Selected peer-reviewed items -->
-        <h3>Peer-reviewed articles</h3>
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., Hua, X., & Johnson, E. J. (2025).</strong>
-          Measuring population heterogeneity requires heterogeneous populations. <em>PNAS</em>.
-          <a class="doi" href="https://doi.org/10.1073/pnas.2425536122" target="_blank" rel="noopener">DOI</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., Sugerman, E. & Johnson, E. J. (2024).</strong>
-          Exposing omitted moderators: Explaining why effect sizes differ in the social sciences. <em>PNAS</em>.
-          <a class="doi" href="https://doi.org/10.1073/pnas.2306281121" target="_blank" rel="noopener">DOI</a>
-        </div>
-
-        <div class="pub">
-          <strong>Li, Y.*, Krefeld-Schwalb, A.*, Wall, D., Toubia, O., Johnson, E & Bartels, D. (2022).</strong>
-          The more you ask, the less you get: When additional questions hurt external validity. <em>Journal of Marketing Research</em>.
-          <a class="doi" href="https://doi.org/10.1177/00222437211073581" target="_blank" rel="noopener">DOI</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A., Pachur, T. & Scheibehenne, B. (2022).</strong>
-          Structural Parameter Interdependencies in Computational Models of Cognition. <em>Psychological Review</em>.
-          <a class="doi" href="https://doi.org/10.1037/rev0000285" target="_blank" rel="noopener">DOI</a>
-        </div>
-
-        <div class="pub">
-          <strong>Krefeld-Schwalb, A. & Rosner, A. (2020).</strong>
-          A new way to guide consumer’s choice: Retro-cueing alters the availability of product information in memory.
-          <a class="doi" href="https://doi.org/10.1016/j.jbusres.2019.08.012" target="_blank" rel="noopener">DOI</a>
-        </div>
-
-        <!-- more items can be added similarly -->
+        <h3>2025</h3>
+        <div class="pub"><strong>Embrey, J. R.* & Krefeld-Schwalb, A.* (2025, July 27).</strong> Cognitive ability affects the coherence between preference estimates.
+          <a class="doi" href="https://doi.org/10.31234/osf.io/ks3qd_v1" target="_blank">DOI</a></div>
+        <!-- Add more as before -->
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="container section">
-      <div class="section-head">
-        <h1>Contact</h1>
-      </div>
-      <div>
-        <p><strong>Email:</strong> <a href="mailto:a.krefeldschwalb@gmail.com">a.krefeldschwalb@gmail.com</a></p>
-        <p><strong>Appointments:</strong> Email for appointment</p>
-      </div>
+      <h1>Contact</h1>
+      <p><strong>Email:</strong> <a href="mailto:a.krefeldschwalb@gmail.com">a.krefeldschwalb@gmail.com</a></p>
+      <p><strong>Appointments:</strong> Email for appointment</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Antonia Krefeld-Schwalb · Built with simple HTML & CSS</p>
-    </div>
+    <div class="container"><p>&copy; <span id="year"></span> Antonia Krefeld-Schwalb</p></div>
   </footer>
 
   <script>
-    // Set year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Toggle logic for "All Publications"
-    (function(){
-      const toggle = document.getElementById('togglePubs');
-      const allSection = document.getElementById('all-publications');
-
-      function setState(expanded){
-        toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-        toggle.textContent = expanded ? 'Hide Publications' : 'Show All Publications';
-        allSection.style.display = expanded ? 'block' : 'none';
-        allSection.setAttribute('aria-hidden', expanded ? 'false' : 'true');
-        // scroll target to All Publications when opening
-        if(expanded) {
-          allSection.scrollIntoView({behavior:'smooth', block:'start'});
-        }
-      }
-
-      // initial state: collapsed
-      setState(false);
-
-      toggle.addEventListener('click', function(e){
-        e.preventDefault();
-        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-        setState(!isExpanded);
-      });
-    })();
+    const toggle = document.getElementById('togglePubs');
+    const allSection = document.getElementById('all-publications');
+    function setState(expanded){
+      toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      toggle.textContent = expanded ? 'Hide Publications' : 'Show All Publications';
+      allSection.style.display = expanded ? 'block' : 'none';
+      allSection.setAttribute('aria-hidden', expanded ? 'false' : 'true');
+      if(expanded) allSection.scrollIntoView({behavior:'smooth'});
+    }
+    setState(false);
+    toggle.addEventListener('click',()=>setState(toggle.getAttribute('aria-expanded')!=='true'));
   </script>
 </body>
 </html>
