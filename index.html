@@ -100,4 +100,281 @@
       min-width:0;
     }
     .bio h3{ margin-top:0; font-size:1.1rem; font-family:Merriweather,serif; }
-    .bio p{ margin:0.6rem 0; color:#333;
+    .bio p{ margin:0.6rem 0; color:#333; font-size:0.98rem; }
+
+    /* Sections */
+    .section{
+      margin-top:2.25rem;
+      padding:1.25rem;
+      background:transparent;
+    }
+    .section .section-head{
+      display:flex;
+      align-items:baseline;
+      gap:1rem;
+      margin-bottom:1rem;
+    }
+    .section h1{
+      margin:0;
+      font-family:Merriweather,serif;
+      font-size:1.5rem;
+      border-bottom:2px solid #eee;
+      padding-bottom:0.35rem;
+    }
+    .pub-list{
+      margin-top:0.75rem;
+    }
+    .pub{
+      padding:0.8rem 0;
+      border-bottom:1px dashed #e7e7e7;
+      font-size:0.95rem;
+    }
+    .pub strong{ color:#111; display:block; margin-bottom:0.25rem; }
+    .doi{
+      display:inline-block;
+      margin-top:0.45rem;
+      padding:0.25rem 0.5rem;
+      border:1px solid #d0dbe8;
+      color:var(--accent);
+      font-size:0.88rem;
+      text-decoration:none;
+      border-radius:6px;
+    }
+
+    /* Toggle button */
+    .btn-toggle{
+      display:inline-block;
+      margin-top:1rem;
+      background:transparent;
+      color:var(--accent);
+      border:2px solid var(--accent);
+      padding:0.5rem 0.9rem;
+      border-radius:8px;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .btn-toggle[aria-expanded="true"]{ background:var(--accent); color:#fff; }
+
+    /* Footer */
+    footer.site-footer{
+      text-align:center;
+      padding:2rem 0;
+      color:var(--muted);
+      border-top:1px solid #eee;
+      margin-top:2rem;
+      font-size:0.92rem;
+    }
+
+    /* Responsive */
+    @media (max-width:880px){
+      .hero{ flex-direction:column; align-items:center; text-align:center; }
+      .bio{ text-align:left; }
+      nav a.nav-link{ display:none; } /* keep nav minimal to avoid JS for toggling */
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Antonia Krefeld-Schwalb</a>
+      <nav aria-label="Main navigation">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#selected-publications">Selected Publications</a>
+        <a class="nav-link" href="#all-publications">All Publications</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="container hero">
+      <div class="profile">
+        <img src="/img/Portrait3.jpg" alt="Portrait of Antonia Krefeld-Schwalb" class="portrait" />
+        <div class="portrait-title">
+          <h2>Antonia Krefeld-Schwalb</h2>
+          <h3>Assistant Professor</h3>
+          <a class="org" href="https://www.eur.nl/en/people/antonia-krefeld-schwalb" target="_blank" rel="noopener">Rotterdam School of Management — Erasmus University</a>
+          <p style="margin-top:0.6rem"><a href="publication/CV Krefeld-Schwalb.pdf">Download CV (PDF)</a></p>
+          <p style="margin-top:0.45rem"><a href="mailto:a.krefeldschwalb@gmail.com">a.krefeldschwalb@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="bio">
+        <h3>Hi — welcome to my homepage.</h3>
+        <p>I am a researcher in Marketing and Assistant Professor at Rotterdam School of Management, Erasmus University. My research combines cognitive science and marketing to better understand consumer behaviour, managerial decision making, and interventions for sustainability.</p>
+        <p>I focus on sustainable consumer behaviour, persuasive communication, and methodological improvements in consumer research. Recent work also addresses climate risk communication and behaviour change interventions.</p>
+      </div>
+    </section>
+
+    <!-- Selected publications -->
+    <section id="selected-publications" class="container section">
+      <div class="section-head">
+        <h1>Selected Publications</h1>
+      </div>
+
+      <div class="pub-list" aria-live="polite">
+        <article class="pub">
+          <strong>Krefeld-Schwalb, A., Hua, X., & Johnson, E. J. (2025).</strong>
+          Measuring population heterogeneity requires heterogeneous populations. <em>PNAS</em>.
+          <a class="doi" href="https://doi.org/10.1073/pnas.2425536122" target="_blank" rel="noopener">DOI 10.1073/pnas.2425536122</a>
+        </article>
+
+        <article class="pub">
+          <strong>Krefeld-Schwalb, A., Sugerman, E., & Johnson, E. J. (2024).</strong>
+          Exposing omitted moderators: Explaining why effect sizes differ in the social sciences. <em>PNAS</em>.
+          <a class="doi" href="https://doi.org/10.1073/pnas.2306281121" target="_blank" rel="noopener">DOI 10.1073/pnas.2306281121</a>
+        </article>
+
+        <article class="pub">
+          <strong>Krefeld-Schwalb, A. & Scheibehenne, B. (2023).</strong>
+          Tighter nets for smaller fishes: Mapping the development of statistical practices. <em>Marketing Letters</em>.
+          <a class="doi" href="https://doi.org/10.1007/s11002-022-09662-3" target="_blank" rel="noopener">DOI 10.1007/s11002-022-09662-3</a>
+        </article>
+
+      </div>
+
+      <!-- Toggle -->
+      <div>
+        <button id="togglePubs" class="btn-toggle" aria-expanded="false" aria-controls="allPublications">Show All Publications</button>
+      </div>
+    </section>
+
+    <!-- All publications (collapsible) -->
+    <section id="all-publications" class="container section" aria-hidden="true" style="display:none;">
+      <div class="section-head">
+        <h1>All Publications</h1>
+      </div>
+
+      <div id="allPublications">
+        <!-- 2025 -->
+        <h3>2025</h3>
+        <div class="pub">
+          <strong>Embrey, J. R.* & Krefeld-Schwalb, A.* (2025, July 27).</strong>
+          Cognitive ability affects the coherence between preference estimates.
+          <a class="doi" href="https://doi.org/10.31234/osf.io/ks3qd_v1" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/ks3qd_v1</a>
+        </div>
+
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A., Van den Bergh, B., & Wilson, R. (2025, July 1).</strong>
+          The Flood Will Come: How Flood Risk Labels Drive Homeowners’ Protection Motivation.
+          <a class="doi" href="https://doi.org/10.31234/osf.io/p76ku_v1" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/p76ku_v1</a>
+        </div>
+
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A., & Johnson, E. J. (2025, June 23).</strong>
+          From Crisis to Revolution: Leveraging Heterogeneity in Consumer Research for Generalizability.
+          <a class="doi" href="https://doi.org/10.31234/osf.io/5bmuy_v1" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/5bmuy_v1</a>
+        </div>
+
+        <!-- 2024 -->
+        <h3>2024</h3>
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A., Bartels, D., & Johnson, E. J. (2024, June 18).</strong>
+          More than Money Over Time: Consumers’ Intertemporal Preferences for Money, Health and Getting Things Done.
+          <a class="doi" href="https://doi.org/10.31234/osf.io/8d2w4" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/8d2w4</a>
+        </div>
+
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A., Martinovici, A., Orquin, J. L., Aribarg, A., Erdem, T., … Yang, C. L. (2024, June 11).</strong>
+          Search in Service of Choice.
+          <a class="doi" href="https://doi.org/10.31234/osf.io/xw5bv" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/xw5bv</a>
+        </div>
+
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A., & Gabel, S. (2023).</strong>
+          Empowering a Sustainable Future: Fostering Sustainable Behavior with Targeted Interventions.
+          <a class="doi" href="https://doi.org/10.31234/osf.io/nc2bh" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/nc2bh</a>
+        </div>
+
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A., Gabel, S., & Wei, S. (2024, Feb 19).</strong>
+          A New Lens on Spillovers: Global Evidence on Overlapping Motives for Sustainable Behaviors.
+          <a class="doi" href="https://doi.org/10.31234/osf.io/syku6" target="_blank" rel="noopener">https://doi.org/10.31234/osf.io/syku6</a>
+        </div>
+
+        <!-- Selected peer-reviewed items -->
+        <h3>Peer-reviewed articles</h3>
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A., Hua, X., & Johnson, E. J. (2025).</strong>
+          Measuring population heterogeneity requires heterogeneous populations. <em>PNAS</em>.
+          <a class="doi" href="https://doi.org/10.1073/pnas.2425536122" target="_blank" rel="noopener">DOI</a>
+        </div>
+
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A., Sugerman, E. & Johnson, E. J. (2024).</strong>
+          Exposing omitted moderators: Explaining why effect sizes differ in the social sciences. <em>PNAS</em>.
+          <a class="doi" href="https://doi.org/10.1073/pnas.2306281121" target="_blank" rel="noopener">DOI</a>
+        </div>
+
+        <div class="pub">
+          <strong>Li, Y.*, Krefeld-Schwalb, A.*, Wall, D., Toubia, O., Johnson, E & Bartels, D. (2022).</strong>
+          The more you ask, the less you get: When additional questions hurt external validity. <em>Journal of Marketing Research</em>.
+          <a class="doi" href="https://doi.org/10.1177/00222437211073581" target="_blank" rel="noopener">DOI</a>
+        </div>
+
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A., Pachur, T. & Scheibehenne, B. (2022).</strong>
+          Structural Parameter Interdependencies in Computational Models of Cognition. <em>Psychological Review</em>.
+          <a class="doi" href="https://doi.org/10.1037/rev0000285" target="_blank" rel="noopener">DOI</a>
+        </div>
+
+        <div class="pub">
+          <strong>Krefeld-Schwalb, A. & Rosner, A. (2020).</strong>
+          A new way to guide consumer’s choice: Retro-cueing alters the availability of product information in memory.
+          <a class="doi" href="https://doi.org/10.1016/j.jbusres.2019.08.012" target="_blank" rel="noopener">DOI</a>
+        </div>
+
+        <!-- more items can be added similarly -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container section">
+      <div class="section-head">
+        <h1>Contact</h1>
+      </div>
+      <div>
+        <p><strong>Email:</strong> <a href="mailto:a.krefeldschwalb@gmail.com">a.krefeldschwalb@gmail.com</a></p>
+        <p><strong>Appointments:</strong> Email for appointment</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Antonia Krefeld-Schwalb · Built with simple HTML & CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Toggle logic for "All Publications"
+    (function(){
+      const toggle = document.getElementById('togglePubs');
+      const allSection = document.getElementById('all-publications');
+
+      function setState(expanded){
+        toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        toggle.textContent = expanded ? 'Hide Publications' : 'Show All Publications';
+        allSection.style.display = expanded ? 'block' : 'none';
+        allSection.setAttribute('aria-hidden', expanded ? 'false' : 'true');
+        // scroll target to All Publications when opening
+        if(expanded) {
+          allSection.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      }
+
+      // initial state: collapsed
+      setState(false);
+
+      toggle.addEventListener('click', function(e){
+        e.preventDefault();
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        setState(!isExpanded);
+      });
+    })();
+  </script>
+</body>
+</html>
