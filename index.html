@@ -5,74 +5,68 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Antonia Krefeld-Schwalb — Assistant Professor</title>
 
-  <meta name="description" content="Antonia Krefeld-Schwalb — Assistant Professor at Rotterdam School of Management. Research in consumer behavior, sustainability, and cognitive science.">
-  <meta name="author" content="Antonia Krefeld-Schwalb">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
-
   <style>
-    :root{
-      --accent:#2b6cb0;
-      --muted:#6c757d;
-      --bg:#ffffff;
-      --text:#222;
-      --max-width:1100px;
-    }
-    body{
-      margin:0;
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.6;
-    }
-    .container{width:94%;max-width:var(--max-width);margin:0 auto;padding:2rem 0;}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#222;line-height:1.6;}
+    .container{width:94%;max-width:1100px;margin:0 auto;padding:2rem 0;}
 
-    header.site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:20;}
-    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.75rem 0;}
-    .brand{font-family:Merriweather,serif;font-weight:700;font-size:1.1rem;color:var(--text);text-decoration:none;}
-    nav a.nav-link{color:var(--muted);text-decoration:none;margin-left:1rem;font-weight:600;font-size:0.95rem;}
-    nav a.nav-link:hover{color:var(--accent);}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:20;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0;}
+    .brand{font-weight:700;font-size:1.1rem;color:#222;text-decoration:none;}
+    nav a{color:#666;text-decoration:none;margin-left:1rem;font-weight:600;font-size:0.95rem;}
+    nav a:hover{color:#2b6cb0;}
 
-    .hero{display:flex;gap:2rem;align-items:flex-start;margin-top:1rem;}
-    .profile{width:100%;max-width:280px;text-align:center;}
+    /* Hero section with background image */
+    .hero{
+      position:relative;
+      display:flex;
+      gap:2rem;
+      margin-top:1rem;
+      overflow:hidden;
+      background:#fff;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      top:0;right:0;bottom:0;
+      width:40%;
+      background:url("img/WhatsApp Image 2025-09-06 at 3.43.23 PM (1).jpeg") center/cover no-repeat;
+      opacity:0.25;
+      z-index:0;
+    }
+    .profile{width:100%;max-width:280px;text-align:center;z-index:1;}
     .portrait{width:100%;max-width:220px;border-radius:50%;display:block;margin:0 auto 1rem;box-shadow:0 8px 20px rgba(20,20,20,0.08);}
-    .extra-pic{width:100%;max-width:260px;border-radius:12px;display:block;margin:1rem auto;box-shadow:0 6px 16px rgba(20,20,20,0.1);}
-    .portrait-title h2{font-family:Merriweather,serif;margin:0;font-size:1.4rem;}
-    .portrait-title h3{margin:0.25rem 0 0;font-size:0.95rem;color:var(--muted);font-weight:600;}
-    .portrait .org{font-size:0.9rem;margin-top:0.6rem;color:var(--accent);text-decoration:none;display:inline-block;}
-
-    .bio{flex:1;min-width:0;}
-    .bio h3{margin-top:0;font-size:1.1rem;font-family:Merriweather,serif;}
+    .bio{flex:1;min-width:0;z-index:1;}
+    .bio h3{margin-top:0;font-size:1.1rem;}
     .bio p{margin:0.6rem 0;font-size:0.98rem;}
 
+    /* Section headings */
     .section{margin-top:2.25rem;padding:1.25rem;}
-    .section h1{margin:0;font-family:Merriweather,serif;font-size:1.5rem;border-bottom:2px solid #eee;padding-bottom:0.35rem;}
+    .section h1{margin:0;font-size:1.5rem;border-bottom:2px solid #eee;padding-bottom:0.35rem;}
     .pub{padding:0.8rem 0;border-bottom:1px dashed #e7e7e7;font-size:0.95rem;}
-    .pub strong{color:#111;display:block;margin-bottom:0.25rem;}
-    .doi{display:inline-block;margin-top:0.45rem;padding:0.25rem 0.5rem;border:1px solid #d0dbe8;color:var(--accent);font-size:0.88rem;text-decoration:none;border-radius:6px;}
+    .pub strong{display:block;margin-bottom:0.25rem;}
+    .doi{display:inline-block;margin-top:0.45rem;padding:0.25rem 0.5rem;border:1px solid #d0dbe8;color:#2b6cb0;font-size:0.88rem;text-decoration:none;border-radius:6px;}
 
-    .btn-toggle{display:inline-block;margin-top:1rem;background:transparent;color:var(--accent);border:2px solid var(--accent);padding:0.5rem 0.9rem;border-radius:8px;font-weight:700;cursor:pointer;}
-    .btn-toggle[aria-expanded="true"]{background:var(--accent);color:#fff;}
+    .btn-toggle{display:inline-block;margin-top:1rem;background:transparent;color:#2b6cb0;border:2px solid #2b6cb0;padding:0.5rem 0.9rem;border-radius:8px;font-weight:700;cursor:pointer;}
+    .btn-toggle[aria-expanded="true"]{background:#2b6cb0;color:#fff;}
 
-    footer.site-footer{text-align:center;padding:2rem 0;color:var(--muted);border-top:1px solid #eee;margin-top:2rem;font-size:0.92rem;}
+    footer{text-align:center;padding:2rem 0;color:#666;border-top:1px solid #eee;margin-top:2rem;font-size:0.92rem;}
 
+    /* Responsive */
     @media (max-width:880px){
       .hero{flex-direction:column;align-items:center;text-align:center;}
-      .bio{text-align:left;}
-      nav a.nav-link{display:none;}
+      .hero::after{display:none;} /* hide background image on small screens */
     }
   </style>
 </head>
 <body>
-  <header class="site-header">
+  <header>
     <div class="container nav-inner">
       <a class="brand" href="#">Antonia Krefeld-Schwalb</a>
       <nav>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#selected-publications">Selected Publications</a>
-        <a class="nav-link" href="#all-publications">All Publications</a>
-        <a class="nav-link" href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#selected-publications">Selected Publications</a>
+        <a href="#all-publications">All Publications</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -81,18 +75,12 @@
     <section id="about" class="container hero">
       <div class="profile">
         <img src="/img/Portrait3.jpg" alt="Portrait of Antonia Krefeld-Schwalb" class="portrait" />
-        <!-- NEW additional image -->
-        <img src="img/WhatsApp Image 2025-09-06 at 3.43.23 PM (1).jpeg" alt="Additional photo of Antonia Krefeld-Schwalb" class="extra-pic" />
-        
         <div class="portrait-title">
           <h2>Antonia Krefeld-Schwalb</h2>
           <h3>Assistant Professor</h3>
-          <a class="org" href="https://www.eur.nl/en/people/antonia-krefeld-schwalb" target="_blank" rel="noopener">Rotterdam School of Management — Erasmus University</a>
-          <p style="margin-top:0.6rem"><a href="publication/CV Krefeld-Schwalb.pdf">Download CV (PDF)</a></p>
-          <p style="margin-top:0.45rem"><a href="mailto:a.krefeldschwalb@gmail.com">a.krefeldschwalb@gmail.com</a></p>
+          <a class="org" href="https://www.eur.nl/en/people/antonia-krefeld-schwalb" target="_blank">Rotterdam School of Management — Erasmus University</a>
         </div>
       </div>
-
       <div class="bio">
         <h3>Hi — welcome to my homepage.</h3>
         <p>I am a researcher in Marketing and Assistant Professor at Rotterdam School of Management, Erasmus University. My research combines cognitive science and marketing to better understand consumer behaviour, managerial decision making, and interventions for sustainability.</p>
