@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\akref\\AppData\\Local\\Temp\\claude\\C--Users-akref-OneDrive-Dokumenter-GitHub-Akrefeld\\4ec266ff-c2b1-4c8a-bd58-07b7671a0815\\scratchpad\\serve.ps1", "-Root", "C:\\Users\\akref\\OneDrive\\Dokumenter\\GitHub\\Akrefeld", "-Port", "8123"],
+      "port": 8123
+    }
+  ]
+}
