@@ -54,6 +54,12 @@
     .btn-toggle{display:inline-block;margin-top:1rem;background:transparent;color:#2b6cb0;border:2px solid #2b6cb0;padding:0.5rem 0.9rem;border-radius:8px;font-weight:700;cursor:pointer;}
     .btn-toggle[aria-expanded="true"]{background:#2b6cb0;color:#fff;}
 
+    /* Image rows: every picture gets the same height, side by side */
+    .gallery{display:flex;flex-wrap:wrap;gap:1rem;margin:1rem 0;}
+    .gallery img{height:260px;width:auto;max-width:100%;object-fit:cover;border-radius:8px;display:block;}
+    .gallery figure{margin:0;display:table;}
+    .gallery figcaption{display:table-caption;caption-side:bottom;font-size:0.85em;font-style:italic;color:#666;margin-top:6px;}
+
     footer{text-align:center;padding:2rem 0;color:#666;border-top:1px solid #eee;margin-top:2rem;font-size:0.92rem;}
 
     /* Responsive */
@@ -61,6 +67,7 @@
       .hero{flex-direction:column;align-items:center;text-align:center;}
       .hero::after{display:none;} /* hide background image on small screens */
       .bio{max-width:100%;} /* text full width on mobile */
+      .gallery img{height:180px;}
     }
   </style>
 </head>
@@ -263,12 +270,12 @@ https://doi.org/10.1371/journal.pone.0143694"  target="_blank" rel="noopener">DO
         I started together with my husband Philipp Schwalb. He, being an artist, and me, a researcher, each invite people from our respective networks. We chose people, 
         whom we judge to be respectful of the other's profession and open to expand their thinking space.</p>
 
-    <p>To unify the group we often use a panel from <a href="https://en.wikipedia.org/wiki/Aby_Warburg">Aby Warburg's</a> <a href="https://warburg.sas.ac.uk/library-collections/warburg-institute-archive/bilderatlas-mnemosyne">Menmosyne Atlas</a> 
+    <p>To unify the group we often use a panel from <a href="https://en.wikipedia.org/wiki/Aby_Warburg">Aby Warburg's</a> <a href="https://warburg.sas.ac.uk/library-collections/warburg-institute-archive/bilderatlas-mnemosyne">Mnemosyne Atlas</a> 
       and have participants expand the panel with associated objects.</p>
 
-     <div style="display:flex; gap:1rem; margin-top:1rem;">
-        <img src="https://github.com/Akrefeld/Akrefeld/blob/master/img/IMG_1873.jpg?raw=true" style="width:33%; border-radius:8px;" />
-        <img src="https://github.com/Akrefeld/Akrefeld/blob/master/img/IMG_1876.jpg?raw=true" style="width:33%; border-radius:8px;" />
+     <div class="gallery">
+        <img src="https://github.com/Akrefeld/Akrefeld/blob/master/img/IMG_1873.jpg?raw=true" alt="SPA gathering" />
+        <img src="https://github.com/Akrefeld/Akrefeld/blob/master/img/IMG_1876.jpg?raw=true" alt="SPA gathering" />
       </div>
 
   <h2>Previous and future SPAs</h2>
@@ -285,26 +292,28 @@ https://doi.org/10.1371/journal.pone.0143694"  target="_blank" rel="noopener">DO
       <li><strong>SPA 5 - (relation)ships' invisible waves</strong>: At this event in relationship with <a href="https://www.ribrib.nl/het-zuid-manifest-carola-loves-carlos">Het Zuid Manifest</a> we dived deeper in to the arts and, unlike all previous events in our living 
         room, it was held at <a href="https://nl.wikipedia.org/wiki/Rivoli_Rotterdam">Rotterdam's most absurd spot</a>. I discussed with <a href="https://www.tudelft.nl/staff/z.j.taylor/"> Zac Taylor</a> his use of fiction in academic writing and we explored the power of real human connection. 
           <a href="https://giudittavendrame.net/">Giuditta Vendrame</a> presented sounds/songs from her artistic research on Bangladeshi women.
-      <div style="display:flex; gap:1rem; margin-top:1rem;">
-        <img src="https://github.com/Akrefeld/Akrefeld/blob/master/img/IMG_2910.jpg?raw=true" style="width:33%; border-radius:8px;" /></li>
+      <div class="gallery">
+        <img src="https://github.com/Akrefeld/Akrefeld/blob/master/img/IMG_2910.jpg?raw=true" alt="SPA 5 at Rivoli Rotterdam" />
+      </div></li>
     
     <li><strong>SPA 6 - (author)ships' invisible waves</strong>: Reestablishing the balance of our SPAs we discussed questions of authorship in the arts and sciences, and rounded the event discussing the (im)possibility of unconscious decision making with a <a href="https://www.unsw.edu.au/staff/ben-newell">Ben Newell</a> our special guest from Australia.</li>
     <li><strong>SPA 7 - (partner)ships' invisible waves</strong>: This event was all about real and unreal partnerships. Maria Ines told us about her newspaper <a href="https://artsoftheworkingclass.org/about">The Arts of the Working Class</a>, pointing towards an emerging arts and science partnership with me.
-<div style="display:flex; gap:1rem; margin-top:1rem;">
-        <img src="https://github.com/Akrefeld/Akrefeld/blob/5d919e2e05fb7da170d4e4854b0c73ac5e180c42/img/WhatsApp%20Image%202026-07-01%20at%208.04.12%20AM.jpeg?raw=true" style="width:33%; border-radius:8px;" /></li>
+<div class="gallery">
+        <img src="https://github.com/Akrefeld/Akrefeld/blob/5d919e2e05fb7da170d4e4854b0c73ac5e180c42/img/WhatsApp%20Image%202026-07-01%20at%208.04.12%20AM.jpeg?raw=true" alt="SPA 7" />
+      </div>
      <a href ="https://www.sharmyncruzrivera.com/"> Sharmyn Cruz Rivera</a> and her partner, <a href="https://www.danielaustingiles.com/josephine-s#0">Dani Giles</a>, presented a project researching Adolf Loos's house for Josephine Baker, an illustration of high society's regard for and gaze upon Black artists during the early 20th century. An imaginary partnership? 
       <a href="https://profiles.stanford.edu/emmett-zeifman"> Emmet Zeifman </a>continued with a theoretical critique of Loos work and thinking. 
       We concluded by closing the triangle such that Emmet's partner  <a href="https://sustainability.stanford.edu/people/sara-constantino">Sara Constantino</a>, my academic sister, reflected on her work on the barriers and power lying in social norms.
     
-  We all added a <font color="magenta"><i>little sugar</i> </font>to the SPA by sharing our favorite <a href="https://open.spotify.com/playlist/2rBFPKyvlVJClMTpR2K40K?si=LO7DdWKoQwyTB1BC8PLJBg"> love songs</a>.</li>
-      </div>
+  We all added a <span style="color:magenta"><i>little sugar</i></span> to the SPA by sharing our favorite <a href="https://open.spotify.com/playlist/2rBFPKyvlVJClMTpR2K40K?si=LO7DdWKoQwyTB1BC8PLJBg"> love songs</a>.</li>
       </ul>
       <li><strong>_: Conditions</strong>: </li> 
       <ul style="list-style-type: square;">
-     <li><strong>SPA 8 - EX:Conditions</strong>: in exhibition making and experimentation we are setting conditions. Conditions that aim at altering cognition and emotions. With a little help from <it>some people around</it>, we will explore the similarities between these interventions.
+     <li><strong>SPA 8 - EX:Conditions</strong>: in exhibition making and experimentation we are setting conditions. Conditions that aim at altering cognition and emotions. With a little help from <i>some people around</i>, we will explore the similarities between these interventions.
        In empirical research, experimental conditions form the foundation for generating insights into causal relationships. 
-       <a href="https://www.eur.nl/en/people/bram-van-den-bergh">Bram Van den Bergh</a> will provide an introduction to this fundamental tool of  behavioral science. In art, exhibitions are a central gateway for art to unfold its effect. <a href="https://www.isabelle-sully.net/"> Isabelle Sully </a> will reflect on her dual role, setting conditions for other artists through curation and being exposed to conditions set by others as an artist herself. <div style="display:flex; gap:1rem; margin-top:1rem;">
-        <img src="https://github.com/Akrefeld/Akrefeld/blob/c78000cf237b6d3b6f85d7d02ff106e7a9145777/img/IMG_4399.jpg?raw=true" style="width:33%; border-radius:8px;" /> </li> 
+       <a href="https://www.eur.nl/en/people/bram-van-den-bergh">Bram Van den Bergh</a> will provide an introduction to this fundamental tool of  behavioral science. In art, exhibitions are a central gateway for art to unfold its effect. <a href="https://www.isabelle-sully.net/"> Isabelle Sully </a> will reflect on her dual role, setting conditions for other artists through curation and being exposed to conditions set by others as an artist herself. <div class="gallery">
+        <img src="https://github.com/Akrefeld/Akrefeld/blob/c78000cf237b6d3b6f85d7d02ff106e7a9145777/img/IMG_4399.jpg?raw=true" alt="SPA 8 EX:Conditions" />
+      </div></li>
      <li><strong>SPA 9 X <a href="https://www.wijnwerk.eu/">Wijnwerk</a> - bi/bye Business:Conditions</strong>: 
 
 <p> *Eureka! is what Archimedes yelled when he understood how to measure the volume of irregular objects, noticing that the water level rose when he stepped into the bathtub. Eureka! Since then signifies the euphoric feeling of having a profound insight.</p>
@@ -313,36 +322,32 @@ https://doi.org/10.1371/journal.pone.0143694"  target="_blank" rel="noopener">DO
 
 <p>Art, as science, is about transforming ideas, elusive and beautiful thoughts, into ways of expression. The need to show and to sell, to sustain the art work, risks that the business conditions oust the core of the art's very existence. </p>
 
-<figure style="width:33%; margin:0;">
+<div class="gallery">
+<figure>
   <img src="https://github.com/Akrefeld/Akrefeld/blob/2c82d0869c43533e17ee72e5b1a694ab4de4a239/img/Eureka!_Archimede.jpg?raw=true"
-       alt="Archimedes running from his bath exclaiming Eureka"
-       style="width:100%; border-radius:8px;" />
-  <figcaption style="font-size:0.85em; font-style:italic; color:#666; margin-top:6px;">
+       alt="Archimedes running from his bath exclaiming Eureka" />
+  <figcaption>
     Archimedes exclaiming Eureka. In his excitement, he forgets to dress and runs nude in the streets straight out of his bath. Drawing by Pietro Scalvini, engraving by Carlo Orsolini, 1737.
   </figcaption>
 </figure>
+</div>
 
 
 
 <p>At this special SPA X Wijnwerk we expose Bi/Bye/Buy-conditions (business conditions forming our work and income). Moving from our living room into the public, we’ll explore at this event the space in between social and commercial, private and professional, awkwardness and fun.</p>
 
-<p>What brings us together is the desire to learn, link, like and let loose. What we will remain is a constellation of WORK(s) intertwining ideas and people: maps, graphs, poems, papers, pamphlets, models, images, pricelists, schedules, photos, paintings, films, transformed Eurekas!*  tied by Ariadne’s threat, fugitive pairing towards a social figuration. </p>
+<p>What brings us together is the desire to learn, link, like and let loose. What will remain is a constellation of WORK(s) intertwining ideas and people: maps, graphs, poems, papers, pamphlets, models, images, pricelists, schedules, photos, paintings, films, transformed Eurekas!*  tied by Ariadne’s thread, fugitive pairing towards a social figuration. </p>
 
-Human connection is what we seeked, and human connection is what we created! I'm increasingly aware if how making yourself vulnerable, be querky, goofy, show some edges allwos others to open up, join in feel connected. We had a magical afternoon and evening that I will continue to reflect on.
+<p>Human connection is what we sought, and human connection is what we created! I'm increasingly aware of how making yourself vulnerable, being quirky, goofy, showing some edges allows others to open up, join in and feel connected. We had a magical afternoon and evening that I will continue to reflect on.</p>
 
 
 
-  <figure style="width:33%; margin:0;">
+  <div class="gallery">
     <img src="https://github.com/Akrefeld/Akrefeld/blob/844d985ca37f05a3a41db983348fa8d9ab2eb815/img/261007_Wijnwerk%20Etalage_SPA_Antonia%20Krefeld_Philipp%20Schwalb.jpeg?raw=true"
-         alt="Wijnwerk Etalage SPA photo 1"
-         style="width:100%; border-radius:8px;" />
-  </figure>
-
-  <figure style="width:33%; margin:0;">
+         alt="Wijnwerk Etalage SPA photo 1" />
     <img src="https://github.com/Akrefeld/Akrefeld/blob/844d985ca37f05a3a41db983348fa8d9ab2eb815/img/261072_Wijnwerk%20Etalage_SPA_Antonia%20Krefeld_Philipp%20Schwalb.jpeg?raw=true"
-         alt="Wijnwerk Etalage SPA photo 2"
-         style="width:100%; border-radius:8px;" />
-  </figure>
+         alt="Wijnwerk Etalage SPA photo 2" />
+  </div>
 
 
 
